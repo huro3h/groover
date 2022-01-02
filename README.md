@@ -1,24 +1,8 @@
-# README
+#### groover
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##### rails new
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bundle exec rails new groover -B -d mysql --skip-turbolinks --skip-test --skip-webpack-install --skip-action-cable --skip-sprockets --skip-spring -T
+```
