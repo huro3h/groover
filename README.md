@@ -15,3 +15,8 @@ BUNDLE_PATH: "vendor/bundle"
 BUNDLE_JOBS: "8"
 BUNDLE_BUILD__MYSQL2: "--with-cppflags=-I/opt/homebrew/opt/openssl@3/include --with-ldflags=-L/opt/homebrew/opt/openssl@3/lib"
 ```
+
+#### migration
+```
+bundle exec ridgepole -c config/database.yml -E development -f db/Schemafile --apply
+```
