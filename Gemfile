@@ -63,3 +63,4 @@ end
 
 ### additional
 gem 'ridgepole'
+gem 'pg'
