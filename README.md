@@ -24,3 +24,9 @@ bundle exec ridgepole -c config/database.yml -E development -f db/Schemafile --a
 #### DB  
 Postgres by Fly.io  
 see https://fly.io/blog/free-postgres/
+
+##### Connecting to Postgres from outside Fly
+https://fly.io/docs/reference/postgres/#connecting-to-postgres-from-outside-fly
+
+##### via VPN with WireGuard
+https://fly.io/docs/reference/private-networking/#private-network-vpn
