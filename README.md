@@ -20,3 +20,7 @@ BUNDLE_BUILD__MYSQL2: "--with-cppflags=-I/opt/homebrew/opt/openssl@3/include --w
 ```
 bundle exec ridgepole -c config/database.yml -E development -f db/Schemafile --apply
 ```
+
+#### DB  
+Postgres by Fly.io  
+see https://fly.io/blog/free-postgres/
