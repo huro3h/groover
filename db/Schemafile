@@ -9,7 +9,6 @@ end
 
 create_table "events", id: :bigint, force: :cascade do |t|
   t.text "name"
-  t.integer "place", null: false, default: 0, comment: 'イベント場所'
   t.text "url"
   t.datetime "published_at", null: false
   t.datetime "created_at", null: false
