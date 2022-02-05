@@ -1,4 +1,47 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-require 'users.schema'
+create_table "djs", id: :bigint, force: :cascade do |t|
+  t.string "name"
+  t.datetime "created_at", null: false
+  t.datetime "updated_at", null: false
+end
+
+create_table "events", id: :bigint, force: :cascade do |t|
+  t.string "name"
+  t.integer "place"
+  t.datetime "published_at", null: false
+  t.datetime "created_at", null: false
+  t.datetime "updated_at", null: false
+end
+
+create_table "songs", id: :bigint, force: :cascade do |t|
+  t.text "name"
+  t.integer "artist_id"
+  t.datetime "created_at", null: false
+  t.datetime "updated_at", null: false
+end
+
+create_table "setlists", id: :bigint, force: :cascade do |t|
+  t.integer "event_id"
+  t.integer "song_id"
+  t.integer "dj_id"
+  t.boolean "requested"
+  t.integer "display_number"
+  t.datetime "published_at", null: false
+  t.datetime "created_at", null: false
+  t.datetime "updated_at", null: false
+end
+
+create_table "artists", id: :bigint, force: :cascade do |t|
+  t.string "name"
+  t.datetime "created_at", null: false
+  t.datetime "updated_at", null: false
+end
+
+# create_table "albums", id: :bigint, force: :cascade do |t|
+#   t.string "name"
+#   t.integer "artist_id"
+#   t.datetime "created_at", null: false
+#   t.datetime "updated_at", null: false
+# end
