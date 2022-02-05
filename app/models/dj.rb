@@ -1,3 +1,2 @@
 class Dj < ApplicationRecord
-  
 end
