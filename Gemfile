@@ -64,3 +64,6 @@ end
 ### additional
 gem 'ridgepole'
 gem 'pg'
+
+gem 'mechanize'
+
