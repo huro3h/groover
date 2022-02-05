@@ -18,15 +18,15 @@ end
 
 create_table "songs", id: :bigint, force: :cascade do |t|
   t.text "name"
-  t.integer "artist_id"
+  t.integer "artist_id", null: false
   t.datetime "created_at", null: false
   t.datetime "updated_at", null: false
 end
 
 create_table "setlists", id: :bigint, force: :cascade do |t|
-  t.integer "event_id"
-  t.integer "song_id"
-  t.integer "dj_id"
+  t.integer "event_id", null: false
+  t.integer "song_id", null: false
+  t.integer "dj_id", null: false
   t.boolean "requested", null: false, default: false
   t.integer "display_number"
   t.datetime "published_at", null: false
