@@ -8,7 +8,7 @@ create_table "djs", id: :bigint, force: :cascade do |t|
 end
 
 create_table "events", id: :bigint, force: :cascade do |t|
-  t.text "name"
+  t.text "title"
   t.text "url"
   t.datetime "published_at", null: false
   t.datetime "created_at", null: false
