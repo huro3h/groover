@@ -63,7 +63,7 @@ end
 
 ### additional
 gem 'ridgepole'
-gem 'pg'
+gem 'mysql2'
 
 gem 'mechanize'
 
