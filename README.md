@@ -21,12 +21,17 @@ BUNDLE_BUILD__MYSQL2: "--with-cppflags=-I/opt/homebrew/opt/openssl@3/include --w
 bundle exec ridgepole -c config/database.yml -E development -f db/Schemafile --apply
 ```
 
-#### DB  
-Postgres by Fly.io  
-see https://fly.io/blog/free-postgres/
+#### DB
+- PlanetScale
+  - https://planetscale.com/
 
-##### Connecting to Postgres from outside Fly
-https://fly.io/docs/reference/postgres/#connecting-to-postgres-from-outside-fly
-
-##### via VPN with WireGuard
-https://fly.io/docs/reference/private-networking/#private-network-vpn
+#### RubyMineからrails server実行時 "SDK に Rails が見つかりません"   
+- 原因  
+プロジェクトディレクトリ内の `vendor/bundle` 以下にインストールしたgemがRubyMine側で読み込めていない
+- 確認方法
+  - プロジェクトツリー内の外部ライブラリ以下に `Gemfile` で入れたgemがあるか
+  - 環境設定 > Ruby SDK および Gem > rbenv(何らかのバージョン管理ツール)  
+  以下に `Gemfile` で入れたgemがあるか
+- 暫定的な回避方法
+  - bundlerでgem installする際のpath指定を止めてグローバル環境に入れる  
+    (以前はpath指定しても問題なかった気がする)
