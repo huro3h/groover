@@ -1,0 +1,8 @@
+{
+  "name": "groover",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:huro3h/groover.git",
+  "author": "huro3h <huro3h@gmail.com>",
+  "license": "MIT"
+}
