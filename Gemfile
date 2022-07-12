@@ -66,9 +66,11 @@ gem 'ridgepole'
 gem 'mysql2'
 
 gem 'mechanize'
+gem 'puppeteer-ruby'
+gem 'matrix'
+gem 'kimurai'
 
 group :development do
   gem 'pry'
   gem 'pry-rails'
 end
-
