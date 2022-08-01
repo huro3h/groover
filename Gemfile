@@ -68,9 +68,12 @@ gem 'mysql2'
 gem 'mechanize'
 gem 'puppeteer-ruby'
 gem 'matrix'
-gem 'kimurai'
+gem 'selenium-webdriver'
+gem 'annotate'
 
 group :development do
   gem 'pry'
   gem 'pry-rails'
+  gem 'rails-erd'
+  gem 'yaml_db'
 end

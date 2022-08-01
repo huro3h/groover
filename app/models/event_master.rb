@@ -1,11 +1,11 @@
 # == Schema Information
 #
-# Table name: djs
+# Table name: event_masters
 #
 #  id         :bigint           not null, primary key
-#  name       :string(255)
+#  name       :text(65535)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
-class Dj < ApplicationRecord
+class EventMaster < ApplicationRecord
 end
